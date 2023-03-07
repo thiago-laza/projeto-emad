@@ -38,9 +38,12 @@ body{
 .titulo-principal{
     padding-bottom: 0%;
     padding-top: 5%;
-    text-align: center;
+    text-align:center;
     font-size: 2em;
     color: var(--cor-terciaria);
+    
+   
+    
 }
 
 .cabecalho__menu{
@@ -93,6 +96,7 @@ body{
     color: var(--cor-secundaria);
     font-size: 1.5rem;
     text-align: justify;
+    text-indent: 2em;
     
     
 }
@@ -124,7 +128,26 @@ body{
     border-radius: 16px;
     font-size: 1.5rem;
     font-weight: 600;/*peso da fonte*/
-    padding: 21.5px 0 ;/*primeiro valor vertical segundo horizontal*/
+    padding: 21.5px 0;/*primeiro valor vertical segundo horizontal*/
+    padding-right: 21.5px;
+    text-decoration: none;/*retira o linha inferior do link*/
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-secundaria);
+}
+
+
+
+.botao2{
+    display: flex;
+    justify-content: center;/*icone e texto para o centro*/
+    gap: 16px;
+    border: 2px solid green;/*largura,tracejado,cor da borda*/
+    width: 20%;/*largura do botão*/
+    text-align: end;
+    border-radius: 16px;
+    font-size: 1.5rem;
+    font-weight: 600;/*peso da fonte*/
+    padding: 2px 0 ;/*primeiro valor vertical segundo horizontal*/
     text-decoration: none;/*retira o linha inferior do link*/
     color: var(--cor-secundaria);
     font-family: var(--fonte-secundaria);
@@ -136,12 +159,21 @@ body{
     color: var(--cor-terciaria);
 }
 
+.botao2:hover{
+    background-color: var(--cor-hover);
+    font-size: 2.3rem;
+    color: green;
+}
+
 .sequencia{
     padding-left: 1.2em;
     padding-right: 1.2em;
+    padding-bottom: 1.5em;
     color: var(--cor-secundaria);
     font-size: 1.5rem;
     text-align: justify;
+    
+
 
 }
 
@@ -149,7 +181,8 @@ body{
     color: var(--cor-terciaria);
     font-size: 2.25rem;
     text-align: left;
-    padding-bottom: 1em;  
+    padding-bottom: 1em;
+    text-decoration: underline;
 }
 
 .paragrafo_sequencia{
@@ -160,15 +193,64 @@ body{
     color: var(--cor-secundaria);
 }
 
+
+
 .topico_sequencia{
     padding-left: 4em;
+    padding-bottom: 1em;
     color: var(--cor-terciaria);
+}
+
+.topico_sequencia2{
+    padding-left: 5em;
+    color: var(--cor-secundaria);
+    padding-top: 0.2em;
+    
 }
 
 .paragrafo_sequencia2{
     padding-left: 6em;
     padding-top: 1em;
     padding-bottom: 1em;
+}
+
+.paragrafo_sequencia3{
+    padding-left: 6em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    color: green;
+    
+}
+
+.paragrafo_sequencia4{
+    padding-left: 6em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    color: var(--cor-terciaria);
+    font-size: 1.5em;
+}
+
+.pontos{
+    border: 2px solid var(--cor-terciaria);
+    padding-top: 1em;
+    padding-right: 1em;
+    margin-bottom: 1em;
+}
+
+.pontos2{
+    border: 2px solid green;
+    padding-bottom: 1em;
+}
+
+
+.link{
+    text-decoration: none;
+    color: orange;
+}
+
+.link2{
+    padding-top: 0.5em;
+    
 }
 
 .rodape{
