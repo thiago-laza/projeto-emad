@@ -262,3 +262,12 @@ body{
     font-size: 1.4rem;
     font-weight: 400;    
 }
+
+@media (max-width:1200px){
+    .cabecalho{
+        padding: 10%;
+        flex-direction: column;
+            
+        }
+    }
+}
